@@ -7,24 +7,7 @@
  
   <meta charset="utf-8">
 
-  <title>Client</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
-  <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
+  <title>COOKING | HOME</title>
 
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
@@ -36,11 +19,6 @@
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-
 </head>
 
 <body>
@@ -48,25 +26,353 @@
   <div class="container">
     <!--header section start-->
     <header>
+      <div class="wrapper">
+
+        <ul>
+          <li class="logo">
+            <h1>
+              <img src="https://via.placeholder.com/220x65" alt="Logo">
+              <a href="index.html" title="Logo">cooking</a>
+            </h1>
+          </li>
+
+          <li>
+            <form class="search_box">
+              <input class="search" type="text" placeholder="What would you like to cook ?">
+            </form>        
+          </li>
+
+          <li>
+            <a href="#FIXME" title="what To Cook This Week">what to cook this week</a>
+          </li>
+
+          <li>
+            <a href="#FIXME" title="Cooking Guides">Cooking guides</a>
+          </li>
       
+          <li class="recipe_box">
+            <span>your recipe box</span>
+            <a href="#FIXME" title="Log In">log in</a>
+          </li>
+
+          <li class="subscribe">
+            <a href="#FIXME" title="Subscribe">subscribe</a>
+          </li>
+        </ul>
+
+      </div>
     </header>
     <!--header section start-->
+
     <!--main section start-->
     <main>
+      
+      <!--banner section start-->
+      <section class="banner">
+        <div class="wrapper">
+
+          <ul class="links">
+            <li>
+              <a href="#FIXME" class="bookmark" title="Save To Recipe Box">save to recipe box</a>
+            </li>
+            <li>
+              <a href="#FIXME" class="facebook" title="Facebook">facebook</a>
+            </li>
+            <li>
+              <a href="#FIXME" class="pinterest" title="Pinterest">pinterest</a>
+            </li>
+            <li>
+              <a href="#FIXME" class="share" title="Share">share</a>
+            </li>
+          </ul>
+
+          <div class="daily">
+            <span class="title">recipe of the day</span>
+            <div class="daily_recipe">
+              <span>sausage parmesan with garliky brocoli</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut et natus laborum</p>
+              <a>
+                <img src="https://via.placeholder.com/42" alt="Mellisa Clark">
+                <span>mellisa clark</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--banner section end-->
+
+      <!--suggestions section start-->
+      <section class="suggestions">       
+        <div class="wrapper">
+
+          <div class="week">
+            <h2>what to cook this week</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </div>
+
+          <h3>sam's suggestions</h3>
+          <span class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut et natus laborum</span>
+
+          <a href="#FIXME" class="left">left</a>
+
+          <ul class="suggestions_slides">
+            
+            <li class="slide">
+              <img src="https://via.placeholder.com/233x158" alt="Slide One">
+              <p>sausage and cabbage</p>
+              <span>by julia moskin</span>
+              <ul>
+                <li>
+                  <span>3 hours</span>
+                </li>
+                <li>
+                  <a href="#FIXME" class="save">save</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slide">
+              <img src="https://via.placeholder.com/233x158" alt="Slide Two">
+              <p>sausage and cabbage</p>
+              <span>by julia moskin</span>
+              <ul>
+                <li>
+                  <span>3 hours</span>
+                </li>
+                <li>
+                  <a href="#FIXME" class="save">save</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slide">
+              <img src="https://via.placeholder.com/233x158" alt="Slide Three">
+              <p>sausage and cabbage</p>
+              <span>by julia moskin</span>
+              <ul>
+                <li>
+                  <span>3 hours</span>
+                </li>
+                <li>
+                  <a href="#FIXME" class="save">save</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slide">
+              <img src="https://via.placeholder.com/233x158" alt="Slide Four">
+              <p>sausage and cabbage</p>
+              <span>by julia moskin</span>
+              <ul>
+                <li>
+                  <span>3 hours</span>
+                </li>
+                <li>
+                  <a href="#FIXME" class="save">save</a>
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+          <a href="#FIXME" class="right">right</a>
+
+          <div class="inbox">
+            <div>
+              <span>get recipes, tips and nyt special offers delivered to your inbox</span>
+              <span>opt out or <a href="#FIXME" title="Contact us">contact us</a> anytime.</span>
+            </div>
+
+            <form class="sign_up">
+              <input type="email" placeholder="Your mail">
+              <a href="#FIXME" title="Sign up">sign up</a>
+            </form>
+          </div>
+
+        </div>
+      </section>
+      <!--suggestions section end-->      
+
+      <!--editors section start-->
+      <section class="editors">       
+        <div class="wrapper">
+          
+          <h3>more from editors</h3>
+          <span class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut et natus laborum</span>
+
+          <ul class="editors_recipes">
+            <li class="recipes">
+              <img src="https://via.placeholder.com/487x322" alt="Breakfast Recipe">
+              <span>our 15 most popular breakfast recipe</span>
+              <a href="#FIXME" class="bookmark" title="Save All 15 Recipes">save all 15 recipes</a>
+            </li>
+
+            <li class="recipes">
+              <img src="https://via.placeholder.com/487x322" alt="Vegetarian Salads">
+              <span>22 filling vegetarian salads that are standalone meals</span>
+              <a href="#FIXME" class="bookmark" title="Save All 22 Recipes">save all 22 recipes</a>
+            </li>
+
+            <li class="recipes">
+              <img src="https://via.placeholder.com/487x322" alt="Classic Dishes">
+              <span>our 15 most popular breakfast recipe</span>
+              <a href="#FIXME" class="bookmark" title="Save All 48 Recipes">save all 48 recipes</a>
+            </li>
+
+            <li class="recipes">
+              <img src="https://via.placeholder.com/487x322" alt="Comfort Food">
+              <span>our 15 most popular breakfast recipe</span>
+              <a href="#FIXME" class="bookmark" title="Save All 71 Recipes">save all 71 recipes</a>
+            </li>
+
+            <li class="recipes">
+              <img src="https://via.placeholder.com/487x322" alt="Staff Favourites">
+              <span>our 15 most popular breakfast recipe</span>
+              <a href="#FIXME" class="bookmark" title="Save All 20 Recipes">save all 20 recipes</a>
+            </li>
+
+            <li class="recipes">
+              <img src="https://via.placeholder.com/487x322" alt="Chicken Recipe">
+              <span>our 15 most popular breakfast recipe</span>
+              <a href="#FIXME" class="bookmark" title="Save All 18 Recipes">save all 18 recipes</a>
+            </li>
+          </ul>
+
+          <a href="#FIXME" class="button" title="See All Editor's Collections">see all editor's collections</a>
+          
+        </div>
+      </section>
+      <!--editors section end-->   
+
+      <!--master section start-->
+      <section class="master">       
+        <div class="wrapper">
+          
+          <h3>master the basics</h3>
+          <span class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut et natus laborum</span>
+
+          <a href="#FIXME" class="left">left</a>
+
+          <ul class="master_recipes">
+            <li>
+              <img src="https://via.placeholder.com/234x159" alt="Video">
+              <a href="#FIXME" title="Play">play</a>
+              <span>cooking guide</span>
+              <span>how to make chill</span>
+              <span>by sam sifton</span>
+            </li>
+
+            <li>
+              <img src="https://via.placeholder.com/234x159" alt="Video">
+              <a href="#FIXME" title="Play">play</a>
+              <span>cooking guide</span>
+              <span>how to make chill</span>
+              <span>by sam sifton</span>
+            </li>
+
+            <li>
+              <img src="https://via.placeholder.com/234x159" alt="Video">
+              <a href="#FIXME" title="Play">play</a>
+              <span>cooking guide</span>
+              <span>how to make chill</span>
+              <span>by sam sifton</span>
+            </li>
+
+            <li>
+              <img src="https://via.placeholder.com/234x159" alt="Video">
+              <a href="#FIXME" title="Play">play</a>
+              <span>cooking guide</span>
+              <span>how to make chill</span>
+              <span>by sam sifton</span>
+            </li>
+          </ul>
+
+          <a href="#FIXME" class="right">right</a>
+
+          <a href="#FIXME" class="button" title="See All Cooking Guides">see all cooking guides</a>
+
+        </div>
+      </section>
+      <!--master section end-->   
+
+      <!--newsletter section start-->
+      <section class="newsletter">       
+        <div class="wrapper">
+          
+          <div>
+            <h2>get our nesletter</h2>
+            <span>get recipes, tips and nyt special offers delivered to your inbox</span>
+            <span>opt out or <a href="#FIXME" title="Contact us">contact us</a> anytime.</span>
+
+            <form class="sign_up">
+              <input type="email" placeholder="Add your email">
+              <a href="#FIXME" title="Sign up">sign up</a>
+            </form>
+          </div>
+
+          <div>
+            <ul class="links">
+              <li>
+                <a href="#FIXME" title="Pinterest" class="pinterest">pinterest</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Facebook" class="facebook">facebook</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Twitter" class="twitter">twitter</a>
+              </li>
+            </ul>
+
+            <a href="#FIXME" title="Download On The AppStore">
+              <span>download on the</span>
+              <span>app store</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <!--newsletter section end-->   
 
     </main>
     <!--main section end-->
 
     <!--footer section start-->
     <footer>      
+      <div class="wrapper">
 
+        <ul>
+          <li>
+            <a href="#FIXME" title="NYTimes.com">NYTimes.com</a>
+          </li>
+          <li>
+            <a href="#FIXME" title="NYTimes.com/food">NYTimes.com/food</a>
+          </li>
+          <li>
+            <a href="#FIXME" title="Faq">faq</a>
+          </li>
+          <li>
+            <a href="#FIXME" title="Send Us Feedback">send us feedback</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#FIXME" title="Privacy Policy">privacy policy</a>
+          </li>
+          <li>
+            <a href="#FIXME" title="Terms Of Service">terrms of service</a>
+          </li>
+          <li>
+            <span>&copy; the new york times company</span>
+          </li>
+        </ul>
+
+      </div>
     </footer>
     <!--footer section end-->
 
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script> -->
 </body>
 </html>
