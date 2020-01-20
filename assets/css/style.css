@@ -1,13 +1,5 @@
 @charset "utf-8";
-/* ==========================================================================
-   1. CSS Reset Code
-   ========================================================================== */
 
-/* 1.1. Eric Meyers Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   ========================================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -106,10 +98,44 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper{ width: 97%;}
+header{ background-color: #fffdff;}
+.recipe_box{ text-align: center; }
+.recipe_box span{ display: block; }
+.recipe_box a{ text-transform: capitalize; }
+h1{ display: flex;}
+header li:not(:first-child){ margin-top: 20px; }
 
+.logo a{
+  text-indent: -9999px;
+  display: inline-block;
+}
 
+header ul{
+  display: flex;
+  justify-content: space-between;
+}
 
+header input[type="text"]{
+  font-size: large;
+  width: 112%;
+  border: none;
+} 
 
+header li:not(:nth-child(2)){
+  font-size: small;
+  text-transform: uppercase;
+}
+
+header a{
+  color: #7c7787;
+  font-weight: bold;
+}
+
+.recipe_box span,.subscribe a{ 
+  color: #b36561;
+  font-weight: bold;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -215,11 +241,3 @@ li {
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
