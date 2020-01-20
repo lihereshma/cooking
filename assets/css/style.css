@@ -154,7 +154,7 @@ header a{
 .banner .wrapper{ 
   width: 97%; 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -208,44 +208,64 @@ header a{
 
 .banner .links{
   position: absolute;
-  bottom: 0;
+  bottom: 17px;
   left: 0;
 }
 
-
-.daily > span{
-  text-transform: uppercase;
+.daily > span{ 
   background-color: #db3e35;
   color: #fff;
+  text-transform: uppercase;
   font-weight: bold;
 }
+
 .daily{
-  margin-top: 35px;
-  margin-bottom: 72px;
   width: 40%;
+  margin-top: 66px;
+  margin-bottom: 72px; 
+  position: relative; 
+  right: -113px;
+}
+
+.daily::before{
+  content: 'recipe of the day';
+  background-color: #dd3d34;
+  text-align: center;
+  padding: 20px;
+  width: 14%;
+  border-radius: 50%;
+  height: 20%;
+  top: -30px;
+  right: 125px;
+  position: absolute;
 }
 
 .daily_recipe{
-  background-color: #fff;
   width: 53%;
-  text-align: center;
   padding: 57px 27px 26px 27px;
+  background-color: #fff;  
+  text-align: center;  
 }
+
 .daily_recipe > span{
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 31px;
   line-height: 130%;
 }
 
 .daily_recipe img{
+  width: 26%;
   display: inline-block;
   border-radius: 100%;
-}
+} 
+
 .daily_recipe p{
-  line-height: 150%;
   margin: 15px 0px;
   color: #7c7c7c;
+  line-height: 150%;
+  
 }
+
 .daily_recipe a span{
   text-transform: uppercase;
   font-size: small;
@@ -258,14 +278,87 @@ header a{
 /*=================================
  Suggestions section styling starts here
 =================================*/
+.suggestions .wrapper{ width: 78%;}
+
+.suggestions{ color: #30272a; }
+
+h2{
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 45px;
+}
+
+.week span{
+  text-transform: uppercase;
+  line-height: 200%;
+  font-size: small;
+}
+
+.week{ text-align: center; }
+
+h3{
+  margin-top: 45px;
+  border-top: 6px solid #30272a;
+  font-size: 31px;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.subheading{
+  font-size: 30px;
+  color: #7c7c7c;
+  line-height: 100%;
+}
+
+.left{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.left::before{
+  content: '\f104';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  font-size: 40px;
+  color: #7c7c7c;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.right{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.right::before{
+  content: '\f105';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  font-size: 40px;
+  color: #7c7c7c;
+  padding: 5px 10px;
+  background-color: #fff;
+}
 
 
 
 
 
+.save{
+  text-indent: -9999px;
+  display: inline-block;
+}
 
-
-
+.save::before{
+  content: '\f097';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #7c7c7c;
+}
 
 /*=================================
   Suggestions section styling ends here
@@ -326,7 +419,6 @@ header a{
 /*=================================
   footer styling starts here
 =================================*/ 
-
 
 
 
