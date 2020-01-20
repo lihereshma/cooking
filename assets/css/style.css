@@ -147,15 +147,110 @@ header a{
 /*=================================
   Banner section styling starts here
 =================================*/
+.banner{ 
+  
+  background-image: url('https://via.placeholder.com/1286x491');}
+
+.banner .wrapper{ 
+  width: 97%; 
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bookmark::before{
+  content: '\f097   ';
+  font-family: FontAwesome;  
+}
+
+.facebook{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.facebook::before{
+  content: '\f09a';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.pinterest{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.pinterest::before{
+  content: '\f231';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.share{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.share::before{
+  content: '\f064';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.banner .links a{
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.banner .links{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 
+.daily > span{
+  text-transform: uppercase;
+  background-color: #db3e35;
+  color: #fff;
+  font-weight: bold;
+}
+.daily{
+  margin-top: 35px;
+  margin-bottom: 72px;
+  width: 40%;
+}
 
+.daily_recipe{
+  background-color: #fff;
+  width: 53%;
+  text-align: center;
+  padding: 57px 27px 26px 27px;
+}
+.daily_recipe > span{
+  text-transform: capitalize;
+  font-size: 30px;
+  line-height: 130%;
+}
 
-
-
-
-
-
+.daily_recipe img{
+  display: inline-block;
+  border-radius: 100%;
+}
+.daily_recipe p{
+  line-height: 150%;
+  margin: 15px 0px;
+  color: #7c7c7c;
+}
+.daily_recipe a span{
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+}
 /*=================================
   Banner section styling ends here
 =================================*/
