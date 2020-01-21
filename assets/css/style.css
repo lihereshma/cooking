@@ -1,13 +1,5 @@
 @charset "utf-8";
-/* ==========================================================================
-   1. CSS Reset Code
-   ========================================================================== */
 
-/* 1.1. Eric Meyers Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   ========================================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -31,6 +23,7 @@ footer, header, hgroup, menu, nav, section {
 
 /* Force scrollbar */
 html { overflow-y: scroll; }
+.container{ overflow-x: hidden;}
 
 /* Align radios and text inputs with their label */
 
@@ -106,11 +99,44 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper,footer .wrapper{ width: 97%;}
+header{ background-color: #fffdff;}
+.recipe_box{ text-align: center; }
+.recipe_box span{ display: block; }
+.recipe_box a{ text-transform: capitalize; }
+h1{ display: flex;}
+header li:not(:first-child){ margin-top: 20px; }
 
+.logo a{
+  display: inline-block;
+  text-indent: -9999px;  
+}
 
+header ul{
+  display: flex;
+  justify-content: space-between;
+}
 
+header input[type="text"]{
+  font-size: large;
+  width: 112%;
+  border: none;
+} 
 
+header li:not(:nth-child(2)){
+  font-size: small;
+  text-transform: uppercase;
+}
 
+header a{
+  color: #7c7787;
+  font-weight: bold;
+}
+
+.recipe_box span,.subscribe a{ 
+  color: #b36561;
+  font-weight: bold;
+}
 
 /*=================================
   Header styling ends here
@@ -120,12 +146,445 @@ li {
   main styling starts here
 =================================*/
 
+/*=================================
+  Banner section styling starts here
+=================================*/
+.banner{ background-image: url('https://via.placeholder.com/1286x491');}
+
+.banner .wrapper{ 
+  width: 97%; 
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.bookmark::before{
+  content: '\f097   ';
+  font-family: FontAwesome;  
+}
+
+.facebook{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.facebook::before{
+  content: '\f09a';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.pinterest{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.pinterest::before{
+  content: '\f231';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.share{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.share::before{
+  content: '\f064';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.banner .links a{
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.banner .links{
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+}
+
+.daily{
+  width: 40%;
+  margin-top: 66px;
+  margin-bottom: 72px; 
+  position: relative; 
+  right: -113px;
+}
+
+.daily::before{
+  width: 14%;
+  height: 20%;
+  padding: 20px;  
+  border-radius: 50%;
+  content: 'recipe of the day';  
+  position: absolute;
+  top: -30px;
+  right: 125px;
+  background-color: #dd3d34;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.daily_recipe{
+  width: 53%;
+  padding: 57px 27px 26px 27px;
+  background-color: #fff;  
+  text-align: center;  
+}
+
+.daily_recipe > span{
+  text-transform: capitalize;
+  font-size: 31px;
+  line-height: 130%;
+}
+
+.daily_recipe img{
+  width: 26%;
+  display: inline-block;
+  border-radius: 100%;
+} 
+
+.daily_recipe p{
+  margin: 15px 0px;
+  color: #7c7c7c;
+  line-height: 150%;
+  
+}
+
+.daily_recipe a span{
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+}
+/*=================================
+  Banner section styling ends here
+=================================*/
+
+/*=================================
+ Suggestions section styling starts here
+=================================*/
+.week{ text-align: center; }
+.slide:not(:last-child){ margin-right: 16px; }
+.inbox{ margin: 0px 28px;}
+
+.suggestions .wrapper,.master .wrapper{ 
+  width: 78%;
+  position: relative;
+}
+
+.suggestions,.editors,.master{ 
+  background-color: #f5f1ee;
+  color: #30272a; 
+}
+
+h2{
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 40px;
+  padding-top: 45px;
+}
+
+.week span{
+  text-transform: uppercase;
+  line-height: 200%;
+  font-size: small;
+}
+
+h3{
+  margin-top: 45px;
+  border-top: 6px solid #30272a;
+  font-size: 31px;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.subheading{
+  font-size: 30px;
+  color: #7c7c7c;
+  line-height: 100%;
+}
+
+.left{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.left::before{
+  content: '\f104';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  font-size: 40px;
+  color: #7c7c7c;
+  padding: 5px 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -35px;
+}
+
+.right{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.right::before{
+  content: '\f105';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  top: 50%;
+  right: -35px;
+  font-size: 40px;
+  color: #7c7c7c;
+  padding: 5px 10px;
+  background-color: #fff;
+  position: absolute;  
+}
+
+.save{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.save::before{
+  padding-right: 10px;
+  content: '\f097';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #7c7c7c;  
+}
+
+.slide{ 
+  border: 1px solid #bebec0;
+  margin: 35px 0px; 
+}
+
+.slide p{
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px 0px 0px 10px;
+}
+.slide span{
+  color: #7c7c7c;
+  font-size: small;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+.slide ul{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+.inbox span:first-child{
+  display: block;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.inbox span:last-child,.newsletter span{
+  text-transform: capitalize;
+  color: #7c7c7c;
+  font-size: small;
+}
+.inbox a,.newsletter a{
+  text-transform: capitalize;
+  color: #7c7c7c;
+  font-size: small;
+  border-bottom: 1px solid #7c7c7c;
+}
+.sign_up a,.recipes a{
+  background-color: #dd3d34;
+  padding: 11px 7px;
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.sign_up input{
+  width: 30%;
+  height: 34px;
+  font-size: medium;
+  color: #7c7c7c;
+}
+/*=================================
+  Suggestions section styling ends here
+=================================*/
+
+/*=================================
+ Editors section styling starts here
+=================================*/
+.editors .wrapper,.newsletter .wrapper{ width: 78%; }
 
 
+.editors ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipes{ 
+  width: 49%;
+  border: 1px solid #bebec0;
+  margin: 16px 0px;
+  text-align: center;
+}
+
+.recipes span{
+  padding-top: 20px;
+  display: block;
+  text-transform: capitalize;
+  font-size: 25px;  
+}
+
+.recipes a{ 
+  padding: 8px;
+  margin: 30px 0px;
+}
+
+.button{
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 3px;  
+  color: #30272a;
+  text-transform: capitalize;
+}
+/*=================================
+ Editors section styling ends here
+=================================*/
+
+/*=================================
+ Master section styling starts here
+=================================*/
+.master .wrapper{ padding-bottom: 30px; }
+.master_recipes span:not(:first-child){ display: block; }
+.master_recipes span{ padding-left: 10px;}
+.master_recipes span:not(:nth-child(3)){ font-size: small;}
 
 
+.master_recipes a{
+  text-indent: -9999px;
+  display: inline-block;
+}
 
+.master_recipes{
+  padding: 40px 0px;
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;  
+}
 
+.master_recipes li{ 
+  position: relative;
+  width: 23%;
+  height: 277px;
+  background-color: #241525;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 120%;
+  text-align: left;
+}
+
+.master_recipes li::after{
+  content: '\f01d';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #fff;
+  font-size: 30px;
+  right: 10px;
+  top: 120px;
+  position: absolute;
+}
+
+.master_recipes span:nth-child(2){
+  padding-top: 10px; 
+  text-transform: uppercase;
+}
+
+.master a:hover{ color: #dd3d34;}
+/*=================================
+  Master section styling ends here
+=================================*/
+
+/*=================================
+ Newsletter section styling starts here
+=================================*/
+.newsletter{ background-color: #e5e7e2; }
+.newsletter .sign_up{ margin-top: 30px;}
+
+.newsletter .wrapper{ 
+  display: flex; 
+  padding: 20px 0px 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.newsletter h3{
+  padding-top: 0px;
+  border: none;
+  margin-top: 0px;
+  font-size: 30px;
+  color: #7c7787;  
+}
+
+.twitter{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.twitter::before{
+  content: '\f099';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.newsletter .links{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #7c7c7c;
+  margin-bottom: 10px;
+}
+
+.newsletter .links a{
+  padding: 10px;
+  border: 1px solid #7c7c7c;
+  border-radius: 50%;  
+  font-size: 20px;
+}
+
+.apple{
+  border: 1px solid #7c7c7c;
+  border-radius: 3px; 
+  background-color: #7c7c7c;   
+}
+.apple span{
+  display: block;
+  color: #fff;
+}
+
+.apple::before{
+  content: '\f179';
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 30px;
+}
+/*=================================
+  Newsletter section styling ends here
+=================================*/
 
 /*=================================
   main styling ends here
@@ -134,21 +593,35 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
+.links a:hover{ color: #dd3d34;}
+a:hover{ color: #dd3d34;}
+.recipes a:hover,.sign_up a:hover{ 
+  background-color: #7c7c7c;
+  color: #000;
+}
 
+footer{ 
+  background-color: #272228;
+  font-size: small;
+}
 
+footer .wrapper{ 
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  color: #fff;
+  text-transform: capitalize;
+}
 
+footer li a{ 
+  color: #fff;
+}
 
-
-
-
+footer li:not(:last-child)::after{
+  content: '|';
+  padding: 0px 10px;
+  color: #fff;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
