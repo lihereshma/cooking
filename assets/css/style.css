@@ -278,7 +278,7 @@ header a{
   position: relative;
 }
 
-.suggestions{ 
+.suggestions,.editors{ 
   background-color: #f5f1ee;
   color: #30272a; 
 }
@@ -287,7 +287,7 @@ h2{
   text-transform: capitalize;
   font-weight: bolder;
   font-size: 40px;
-  margin-top: 45px;
+  padding-top: 45px;
 }
 
 .week span{
@@ -398,7 +398,7 @@ h3{
   color: #7c7c7c;
   font-size: small;
 }
-.sign_up a{
+.sign_up a,.recipes a{
   background-color: #dd3d34;
   padding: 11px 7px;
   color: #fff;
@@ -419,13 +419,38 @@ h3{
 /*=================================
  Editors section styling starts here
 =================================*/
+.editors .wrapper{ width: 78%;}
 
+.editors ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.recipes{ 
+  width: 49%;
+  border: 1px solid #bebec0;
+  margin: 16px 0px;
+  text-align: center;
+}
+.recipes span{
+  display: block;
+  text-transform: capitalize;
+  font-size: 25px;
+  padding-top: 20px;
+}
+.recipes a{ 
+  padding: 8px;
+  margin: 30px 0px;
+}
 
-
-
-
-
+.button{
+  color: #30272a;
+  text-transform: capitalize;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 10px 20px
+}
 
 
 /*=================================
