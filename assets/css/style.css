@@ -393,10 +393,16 @@ h3{
   font-weight: bold;
 }
 .inbox{ margin: 0px 28px;}
-.inbox span:last-child,.inbox a{
+.inbox span:last-child,.newsletter span{
   text-transform: capitalize;
   color: #7c7c7c;
   font-size: small;
+}
+.inbox a,.newsletter a{
+  text-transform: capitalize;
+  color: #7c7c7c;
+  font-size: small;
+  border-bottom: 1px solid #7c7c7c;
 }
 .sign_up a,.recipes a{
   background-color: #dd3d34;
@@ -407,7 +413,7 @@ h3{
   border-radius: 3px;
 }
 .sign_up input{
-  width: 24.5%;
+  width: 30%;
   height: 34px;
   font-size: medium;
   color: #7c7c7c;
@@ -419,7 +425,7 @@ h3{
 /*=================================
  Editors section styling starts here
 =================================*/
-.editors .wrapper{ width: 78%;}
+.editors .wrapper,.newsletter .wrapper{ width: 78%;}
 
 .editors ul{
   display: flex;
@@ -460,7 +466,7 @@ h3{
 /*=================================
  Master section styling starts here
 =================================*/
-
+.master .wrapper{ padding-bottom: 30px;}
 .master_recipes a{
   text-indent: -9999px;
   display: inline-block;
@@ -502,11 +508,6 @@ h3{
   padding-top: 10px; 
   text-transform: uppercase;
 }
-
-
-
-
-
 /*=================================
   Master section styling ends here
 =================================*/
@@ -514,14 +515,59 @@ h3{
 /*=================================
  Newsletter section styling starts here
 =================================*/
+.newsletter{ background-color: #e5e7e2;}
+.newsletter .wrapper{ 
+  display: flex; 
+  padding: 20px 0px 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.newsletter h3{
+  font-size: 30px;
+  color: #7c7787;
+  border: none;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.twitter{
+  text-indent: -9999px;
+  display: inline-block;
+}
 
+.twitter::before{
+  content: '\f099';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+.links{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #7c7c7c;
+  margin-bottom: 10px;
+}
 
-
-
-
-
-
-
+.links a{
+  border: 1px solid #7c7c7c;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+.apple{
+  border: 1px solid #7c7c7c;
+  background-color: #7c7c7c; 
+  border-radius: 3px; 
+}
+.apple span{
+  display: block;
+  color: #fff;
+}
+.apple::before{
+  content: '\f179';
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 30px;
+}
+.newsletter .sign_up{ margin-top: 30px;}
 
 /*=================================
   Newsletter section styling ends here
